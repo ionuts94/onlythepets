@@ -1,6 +1,7 @@
 "use client"
 
 import Link from "next/link";
+import { ScrollButton } from "./scroll-button";
 
 export function Hero() {
   const scrollToContact = () => {
@@ -27,18 +28,18 @@ export function Hero() {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4">
-            <Link
-              href="#contact"
+            <ScrollButton
+              scrollToId="contact"
               className="cursor-pointer px-8 py-4 bg-white text-neutral-900 hover:bg-neutral-100 transition-colors duration-200"
             >
               Contact Us
-            </Link>
-            <Link
-              href="#contact"
+            </ScrollButton>
+            <ScrollButton
+              scrollToId="contact"
               className="cursor-pointer px-8 py-4 border border-white text-white hover:bg-white hover:text-neutral-900 transition-colors duration-200"
             >
               Become a Distribution Partner
-            </Link>
+            </ScrollButton>
           </div>
         </div>
       </div>
