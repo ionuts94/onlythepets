@@ -8,9 +8,9 @@ export default async function LandingPage() {
     return (
         <div className="min-h-screen bg-white">
             <Hero />
-            <About />
             <Brands />
             <WhyPartner />
+            <About />
             <Contact />
         </div>
     )

@@ -5,7 +5,7 @@ export function WhyPartner() {
     {
       icon: Award,
       title: 'Premium and Differentiated Products',
-      description: 'Stand out with exclusive European brands that command premium positioning'
+      description: 'Differentiate your assortment with exclusive European brands that support premium pricing and higher margins.'
     },
     {
       icon: Globe,
@@ -27,7 +27,7 @@ export function WhyPartner() {
   return (
     <section className="py-24 md:py-32 bg-white">
       <div className="max-w-7xl mx-auto px-6">
-        <h2 className="text-3xl md:text-4xl text-center mb-20 tracking-tight">Why Partner With Us</h2>
+        <h2 className="text-3xl md:text-4xl text-center mb-20 tracking-tight text-pink-900">Why Partner With Us</h2>
         
         <div className="grid md:grid-cols-2 gap-12 lg:gap-16">
           {benefits.map((benefit, index) => {
@@ -35,13 +35,13 @@ export function WhyPartner() {
             return (
               <div key={index} className="flex gap-6">
                 <div className="flex-shrink-0">
-                  <div className="w-12 h-12 bg-neutral-900 text-white flex items-center justify-center">
+                  <div className="w-12 h-12 bg-gradient-to-br from-pink-400 to-rose-400 text-white flex items-center justify-center rounded-lg shadow-md">
                     <Icon size={24} strokeWidth={1.5} />
                   </div>
                 </div>
                 <div>
-                  <h3 className="text-xl mb-3 tracking-tight">{benefit.title}</h3>
-                  <p className="text-neutral-600 leading-relaxed font-light">
+                  <h3 className="text-xl mb-3 tracking-tight text-pink-900">{benefit.title}</h3>
+                  <p className="text-lg md:text-xl text-neutral-700 leading-relaxed font-light">
                     {benefit.description}
                   </p>
                 </div>
